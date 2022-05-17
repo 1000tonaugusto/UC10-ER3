@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "email": "milton@milton.com.br",
+      "password": "$2a$10$ro3XOQT39v0fQFOFTLliAePwyT7emZwnTFLGQ1B8MiVXo2n4.njh2",
+      "id": 1
+    }
+  ],
   "novidades": [
     {
       "id": "1",
@@ -79,29 +86,15 @@
   ],
   "carrinho": [
     {
-      "id": 1,
-      "nome": "FAR CRY 6",
-      "urlImagem": "",
-      "preco": "R$ 999,99",
-      "quantidade": "1"
-    },
-    {
-      "id": 2,
+      "id": "ZVsCXk5",
       "nome": "ASSASSIN’S CREED VALHALLA",
       "urlImagem": "",
       "preco": "R$ 999,99",
       "quantidade": "1"
     },
     {
-      "id": 3,
+      "id": "gfHUtaP",
       "nome": "ASSASSIN’S CREED VALHALLA",
-      "urlImagem": "",
-      "preco": "R$ 999,99",
-      "quantidade": "1"
-    },
-    {
-      "id": 4,
-      "nome": "JOYSTICK XBOX ONE",
       "urlImagem": "",
       "preco": "R$ 999,99",
       "quantidade": "1"

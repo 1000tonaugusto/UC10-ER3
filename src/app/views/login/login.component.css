@@ -1,0 +1,12 @@
+body{
+    background-color: radial-gradient(38.71% 136.09% at 50.71% 0%, rgba(88, 173, 215, 0.8) 0%, rgba(46, 48, 47, 0.8) 90.36%);
+}
+
+#mensagemUsuario {
+    font-family: Arial;
+    color: black;
+}
+
+#botaoUsuario:hover {
+    cursor: pointer;
+}

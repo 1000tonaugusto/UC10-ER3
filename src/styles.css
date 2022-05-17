@@ -113,3 +113,15 @@
       }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.modal-body, .modal-header, .modal-footer {
+  background-color: #555151;
+}
+
+#campoEmail, #campoPassword {
+  background-color: #707070;
+}
+
+#modal-basic-title {
+  color:#1b1b1b;
+}

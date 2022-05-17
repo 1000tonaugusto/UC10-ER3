@@ -1,0 +1,33 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Login</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form #loginForm="ngForm" >
+        <div class="mb-3">
+          <label for="campoEmail">E-mail</label>
+          <div class="input-group">
+            <input  [(ngModel)]="loginMd.email" name="campoEmail" id="campoEmail" type="email" class="form-control">
+          </div>
+        </div>
+        <div class="mb-3">
+            <label for="campoPassword">Senha</label>
+            <div class="input-group">
+              <input [(ngModel)]="loginMd.password" name="campoPassword" id="campoPassword" type="password" class="form-control" >
+            </div>
+          </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="acessa()">Login</button>
+      
+    </div>
+  </ng-template>
+  
+  <a id="botaoUsuario" (click)="open(content)"><img class="img-fluid" id="iconeUsuario" src="../../../assets/img/icones/user_32x32.png"></a>
+  <a [routerLink]="['carrinho/']"><img class="img-fluid" id="iconeCarrinho" src="./assets/img/icones/carrinho_32x32.png"></a>
+  
+  <hr>
+  
+  <pre *ngIf = " mensagem != ''" id="mensagemUsuario">{{ mensagem }}</pre>
