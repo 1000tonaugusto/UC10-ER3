@@ -1,0 +1,157 @@
+<header>
+    <div id="barraTitulo"  class="container-md">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="./assets/img/icones/controle-de-video-game.png">
+            </div>
+            <div class="col-md-4 text-center">
+                <p id="tituloCab">GAMEMANIA</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <a href="#" id="botaoUsuario"><img class="img-fluid" id="iconeUsuario" src="./assets/img/icones/user_32x32.png"></a>
+                <a [routerLink]="['carrinho/']"><img class="img-fluid" id="iconeCarrinho" src="./assets/img/icones/carrinho_32x32.png"></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEPARTAMENTOS</a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-white" href="#">Acessórios Gamer</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Periféricos</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Computadores</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Celulares</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Tables</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">CONSOLES</a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-white" href="#">Nintendo</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Playstation</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Xbox</a></li>
+                          <li><a class="dropdown-item text-white" href="#">Pc Gamer</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PC GAMERS</a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-white" href="#">Intel</a></li>
+                          <li><a class="dropdown-item text-white" href="#">AMD</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">JOGOS</a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-white" href="#">Nintendo</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Playstation</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Xbox</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Pc Gamer</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ACESSÓRIOS</a>
+                        <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-white" href="#">Joysticks</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Adaptadores</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Wearables</a></li>
+                        </ul>
+                      </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="textoLojas">
+        <h1>Nossas Lojas</h1>
+        <div class="detalheLojas">
+            <h2>Unidade Teresina-PI</h2>
+            <p>Av. Frei Serafim, 9999</p>
+            <p>Cep: 64000-000</p>
+            <p>Telefone: (99) 9999-9999</p>
+        </div>
+        <div class="detalheLojas">
+            <h2>Unidade Fortaleza-CE</h2>
+            <p>Av. Dom Luis, 3333</p>
+            <p>Cep: 60000-000</p>
+            <p>Telefone: (88) 8888-8888</p>
+        </div>
+        <div class="detalheLojas">
+            <h2>Unidade Recife-PE</h2>
+            <p>Av. Recife, 7777</p>
+            <p>Cep: 51000-000</p>
+            <p>Telefone: (77) 7777-7777</p>
+        </div>
+        <div class="detalheLojas">
+            <h2>Unidade São Luis-MA</h2>
+            <p>Av. Eng. Emiliano Macieira, S/N</p>
+            <p>Cep: 65000-000</p>
+            <p>Telefone: (66) 6666-6666</p>
+        </div>
+    </div>
+</main>
+
+<footer class="container">
+    <div class="d-flex align-items-center p-3 lg-3 tituloSecao text-white">
+        <img src="assets/img/icones/email_32x32.png">
+        <div class="col-md-5 lh-1 text-left ">
+            <h1 class="h2 mb-0 text-white lh-1">CADASTRE-SE PARA RECEBER</h1>
+            <h1 class="h5 mb-0 text-white lh-1">Ofertas recomendadas e preços exclusivos!</h1>
+        </div>
+        <div class="input-group">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">INSCREVER-SE</button>
+        </div>
+    </div>
+
+    <div class="row" id="areaInfo">
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">INSTITUCIONAL</h1>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="https://www.procon.df.gov.br/wp-content/uploads/2019/08/Codigo-do-consumidor-FINAL.pdf" target="_blank">Defesa do consumidor</a></li>
+                <li class="list-group-item"><a routerLink="../empresa">Empresa</a></li>
+                <li class="list-group-item"><a routerLink="../lojas">Nossas Lojas</a></li>
+              </ul>
+        </div>
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">ATENDIMENTO</h1>
+            <ul class="list-group">
+            <li class="list-group-item" id="telefone">(86) 9 9999-9999</li>
+            <li class="list-group-item" id="email">milton@milton.com.br</li>
+            <li class="list-group-item" id="whatsapp">(86) 9 9999-9999</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">REDES SOCIAIS</h1>
+            <ul class="list-group">
+                <li class="list-group-item" id="facebook">Facebook</li>
+                <li class="list-group-item" id="instagram">Instagram</li>
+                <li class="list-group-item" id="twitter">Twitter</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">FORMA DE PAGAMENTO</h1>
+            <img src="./assets/img/icones/cartao_visa.png">
+            <img src="./assets/img/icones/cartao_mastercard.png">
+            <img src="./assets/img/icones/mercadopago.png">
+            <img src="./assets/img/icones/boleto.png">
+            <img src="./assets/img/icones/americanexpress.png">
+            <img src="./assets/img/icones/cartao_elo.png">
+            <img src="./assets/img/icones/banco_brasil.png">
+            <img src="./assets/img/icones/paypal.png">
+        </div>
+    </div>
+</footer>

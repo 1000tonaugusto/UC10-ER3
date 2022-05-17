@@ -1,0 +1,154 @@
+@font-face {
+    font-family: fontInfo;
+    src: url(../../../assets/fonts/Telex-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: fontEmail;
+    src: url(../../../assets/fonts/ShareTech-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: fontSecao;
+    src: url(../../../assets/fonts/SigmarOne-Regular.ttf);
+  }
+  
+          body {
+            height: auto;
+            /* background: radial-gradient(38.71% 136.09% at 50.71% 0%, rgba(88, 173, 215, 0.8) 0%, rgba(46, 48, 47, 0.8) 90.36%); */
+          }
+          
+          #barraTitulo {
+            margin-top: 0%;
+          }
+          
+          #tituloCab {
+            font-family: fontSecao;
+            color: #C4C4C4;
+            font-size: 3rem;
+          }
+          
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+          
+          .myCarousel {
+            width: 100.5rem;
+          }
+          
+          .tituloSecao {
+            text-align: center;
+            background-color: #3A3636;
+          }
+          
+          .tituloSecao {
+            font-family: fontEmail;
+          }
+  
+          .quadroItem {
+            align-items: center;
+          }
+          
+          .quadroItemDentro {
+            width: 98%;
+            background-color: #CFCFCF;
+            margin-bottom: 1%;
+            border-radius: 5%;
+            mix-blend-mode: initial;
+          }
+          
+          .quadroItem img {
+            filter: blur(0px) !important;
+            mix-blend-mode: normal !important;
+            display: block;
+            height: 18.5rem;
+          }
+          
+          .quadroItem p {
+            font-family: fontEmail;
+            font-size: 1.4rem;
+          }
+          
+          .preco {
+            color: #AD2A2A;
+            font-size: 2.4rem;
+            font-weight: 700;
+          }
+          
+          .topicoRodape {
+            font-size: 1.6rem;
+            font-family: fontInfo;
+            color: #C4C4C4;
+          }
+          
+          .list-group-item,
+          .list-group-item a {
+            text-decoration: none;
+            color: #C4C4C4;
+            background-color: transparent;
+            border: transparent;
+            font-family: fontInfo;
+          }
+
+          #tituloItem {
+            font-family: fontEmail;
+            color:#1b1b1b;
+        }
+
+        #botaoIncluirCar {
+          margin-bottom: 1%;
+          width: 100%;
+        }
+          
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+  
+          #dialog-message {
+            display:none;
+          }
+
+.imagemProduto {
+    margin-top: 5%;
+}
+
+#quadroDescricao {
+    background-color: #CFCFCF;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 1%;
+    mix-blend-mode: initial;
+    border: 0px #000000;
+}
+
+
+#tituloitem {
+    font-family: fontEmail;
+    color:#1b1b1b;
+}
+
+.inputOculto {
+  display: none;
+  width: 1%;
+}
+
+::ng-deep .mat-snack-bar-container{
+  color: #eff0ef !important;
+  background-color: #1c1d1c !important;
+  border-color: #c3e6cb !important;
+}
+::ng-deep .mat-simple-snackbar-action {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}

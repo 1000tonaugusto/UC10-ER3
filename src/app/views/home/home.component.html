@@ -1,0 +1,218 @@
+<header>
+    <div id="barraTitulo"  class="container-md">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="./assets/img/icones/controle-de-video-game.png">
+            </div>
+            <div class="col-md-4 text-center">
+                <p id="tituloCab">GAMEMANIA</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <a href="#" id="botaoUsuario"><img class="img-fluid" id="iconeUsuario" src="./assets/img/icones/user_32x32.png"></a>
+                <a [routerLink]="['carrinho/']"><img class="img-fluid" id="iconeCarrinho" src="./assets/img/icones/carrinho_32x32.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">DEPARTAMENTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">CONSOLES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">PC GAMERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">JOGOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ACESSÓRIOS</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>
+
+<main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: 13}"><img class="justify-content-center img-fluid rounded"
+                  src="./assets/img/banner/UK_FC6-Preorder-oldFC-adhoc.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: 4}"><img class="imagemBanner img-fluid rounded"
+                  src="./assets/img/banner/fifa22.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: 14}"><img class="imagemBanner img-fluid rounded"
+                  src="./assets/img/banner/Dying_Light_2_Stay_Human.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: 15}"><img class="imagemBanner img-fluid rounded"
+                  src="./assets/img/banner/Deathloop_posters.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: 16}"><img class="imagemBanner img-fluid rounded"
+                  src="./assets/img/banner/horizon_zero.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="carousel-caption">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: 2}"><img class="imagemBanner img-fluid rounded"
+                  src="./assets/img/banner/ps5.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <div class="container marketing">
+      <div class="d-flex align-items-center p-3 my-3 text-white tituloSecao">
+        <h1>NOVIDADES</h1>
+      </div>
+      <div class="row" id="quadroNovidades">
+        <div class="col-lg-3 quadroItem" *ngFor="let novidade of listaNovidades">
+          <div class="quadroItemDentro">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: [novidade.id]}"><img class="imagemProduto img-fluid rounded mx-auto d-block"
+                      src="{{novidade.urlImagem}}"></a>
+              <p class="text-center">{{novidade.nome}}</p>
+              <p class="text-center preco">R$ {{novidade.preco}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center p-3 my-3 text-white tituloSecao">
+        <h1>PROMOÇÕES</h1>
+      </div>
+      <div class="row" id="quadroPromocoes1">
+        <div class="col-lg-3 quadroItem" *ngFor="let promocoes1 of listaPromocoes1">
+          <div class="quadroItemDentro">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: [promocoes1.id]}"><img class="imagemProduto img-fluid rounded mx-auto d-block"
+                      src="{{promocoes1.urlImagem}}"></a>
+              <p class="text-center">{{promocoes1.nome}}</p>
+              <p class="text-center preco">R$ {{promocoes1.preco}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="quadroPromocoes2">
+        <div class="col-lg-3 quadroItem" *ngFor="let promocoes2 of listaPromocoes2">
+          <div class="quadroItemDentro">
+              <a [routerLink]="['compraitem/']" [queryParams]="{idProduto: [promocoes2.id]}"><img class="imagemProduto img-fluid rounded mx-auto d-block"
+                      src="{{promocoes2.urlImagem}}"></a>
+              <p class="text-center">{{promocoes2.nome}}</p>
+              <p class="text-center preco">R$ {{promocoes2.preco}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dialog-message" title="E-mail cadastrado">
+        <p>
+          <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+          Seu e-mail foi cadastrado para receber nossas ofertas!
+        </p>
+    </div>
+</main>
+
+<footer class="container">
+    <div class="d-flex align-items-center p-3 my-3 tituloSecao text-white">
+        <img src="./assets/img/icones/email_32x32.png">
+        <div class="col-md-5 lh-1 text-left ">
+            <h1 class="h2 mb-0 text-white lh-1">CADASTRE-SE PARA RECEBER</h1>
+            <h1 class="h5 mb-0 text-white lh-1">Ofertas recomendadas e preços exclusivos!</h1>
+        </div>
+        <div class="input-group">
+            <input id="campoEmail" class="form-control me-2" type="email" placeholder="" aria-label="email">
+            <button id="botaoInscrever" class="btn btn-outline-secondary" type="submit">INSCREVER-SE</button>
+        </div>
+    </div>
+
+    <div class="row" id="areaInfo">
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">INSTITUCIONAL</h1>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="https://www.procon.df.gov.br/wp-content/uploads/2019/08/Codigo-do-consumidor-FINAL.pdf" target="_blank">Defesa do consumidor</a></li>
+                <li class="list-group-item"><a routerLink="empresa">Empresa</a></li>
+                <li class="list-group-item"><a routerLink="lojas">Nossas Lojas</a></li>
+              </ul>
+        </div>
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">ATENDIMENTO</h1>
+            <ul class="list-group">
+            <li class="list-group-item" id="telefone">(86) 9 9999-9999</li>
+            <li class="list-group-item" id="email">milton@milton.com.br</li>
+            <li class="list-group-item" id="whatsapp">(86) 9 9999-9999</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">REDES SOCIAIS</h1>
+            <ul class="list-group">
+                <li class="list-group-item" id="facebook">Facebook</li>
+                <li class="list-group-item" id="instagram">Instagram</li>
+                <li class="list-group-item" id="twitter">Twitter</li>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <h1 class="topicoRodape">FORMA DE PAGAMENTO</h1>
+            <img src="./assets/img/icones/cartao_visa.png">
+            <img src="./assets/img/icones/cartao_mastercard.png">
+            <img src="./assets/img/icones/mercadopago.png">
+            <img src="./assets/img/icones/boleto.png">
+            <img src="./assets/img/icones/americanexpress.png">
+            <img src="./assets/img/icones/cartao_elo.png">
+            <img src="./assets/img/icones/banco_brasil.png">
+            <img src="./assets/img/icones/paypal.png">
+        </div>
+    </div>
+</footer>

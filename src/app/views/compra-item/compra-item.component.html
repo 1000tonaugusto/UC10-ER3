@@ -1,0 +1,111 @@
+<header>
+    <div id="barraTitulo"  class="container-md">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-fluid" src="./assets/img/icones/controle-de-video-game.png">
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="#"><p id="tituloCab">GAMEMANIA</p></a>
+            </div>
+            <div class="col-md-4 text-end">
+              <a href="#" id="botaoUsuario"><img class="img-fluid" id="iconeUsuario" src="./assets/img/icones/user_32x32.png"></a>
+              <a [routerLink]="['../carrinho/']"><img class="img-fluid" id="iconeCarrinho" src="./assets/img/icones/carrinho_32x32.png"></a>
+          </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">DEPARTAMENTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">CONSOLES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">PC GAMERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">JOGOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">ACESSÓRIOS</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<main>
+
+  <div class="container">
+      <div class="row" id="quadroDescricao">
+      </div>
+      <form>
+        <button id="botaoIncluirCar" class="btn btn-secondary btn-lg btn-block" type="button" (click)="criarCarrinho()">COMPRAR</button>
+      </form>
+  </div>
+
+</main>
+  <footer class="container">
+      <div class="d-flex align-items-center p-3 lg-3 tituloSecao text-white">
+          <img src="assets/img/icones/email_32x32.png">
+          <div class="col-md-5 lh-1 text-left ">
+              <h1 class="h2 mb-0 text-white lh-1">CADASTRE-SE PARA RECEBER</h1>
+              <h1 class="h5 mb-0 text-white lh-1">Ofertas recomendadas e preços exclusivos!</h1>
+          </div>
+          <div class="input-group">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button  class="btn btn-outline-secondary" type="submit">INSCREVER-SE</button>
+          </div>
+      </div>
+  
+      <div class="row" id="areaInfo">
+          <div class="col-lg-3">
+              <h1 class="topicoRodape">INSTITUCIONAL</h1>
+              <ul class="list-group">
+                  <li class="list-group-item"><a href="https://www.procon.df.gov.br/wp-content/uploads/2019/08/Codigo-do-consumidor-FINAL.pdf" target="_blank">Defesa do consumidor</a></li>
+                  <li class="list-group-item"><a routerLink="../empresa">Empresa</a></li>
+                  <li class="list-group-item"><a routerLink="../lojas">Nossas Lojas</a></li>
+                </ul>
+          </div>
+          <div class="col-lg-3">
+              <h1 class="topicoRodape">ATENDIMENTO</h1>
+              <ul class="list-group">
+              <li class="list-group-item" id="telefone">(86) 9 9999-9999</li>
+              <li class="list-group-item" id="email">milton@milton.com.br</li>
+              <li class="list-group-item" id="whatsapp">(86) 9 9999-9999</li>
+              </ul>
+          </div>
+          <div class="col-lg-3">
+              <h1 class="topicoRodape">REDES SOCIAIS</h1>
+              <ul class="list-group">
+                  <li class="list-group-item" id="facebook">Facebook</li>
+                  <li class="list-group-item" id="instagram">Instagram</li>
+                  <li class="list-group-item" id="twitter">Twitter</li>
+              </ul>
+          </div>
+          <div class="col-lg-3">
+              <h1 class="topicoRodape">FORMA DE PAGAMENTO</h1>
+              <img src="./assets/img/icones/cartao_visa.png">
+              <img src="./assets/img/icones/cartao_mastercard.png">
+              <img src="./assets/img/icones/mercadopago.png">
+              <img src="./assets/img/icones/boleto.png">
+              <img src="./assets/img/icones/americanexpress.png">
+              <img src="./assets/img/icones/cartao_elo.png">
+              <img src="./assets/img/icones/banco_brasil.png">
+              <img src="./assets/img/icones/paypal.png">
+          </div>
+      </div>
+  </footer>
