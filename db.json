@@ -86,14 +86,7 @@
   ],
   "carrinho": [
     {
-      "id": "ZVsCXk5",
-      "nome": "ASSASSIN’S CREED VALHALLA",
-      "urlImagem": "",
-      "preco": "R$ 999,99",
-      "quantidade": "1"
-    },
-    {
-      "id": "gfHUtaP",
+      "id": 1,
       "nome": "ASSASSIN’S CREED VALHALLA",
       "urlImagem": "",
       "preco": "R$ 999,99",

@@ -13,17 +13,17 @@ import { Login } from '../../models/login';
 
 export class LoginComponent implements OnInit {
 
-   loginMd: Login = {
-      email: "",
-      password: ""
-    }
+  loginMd: Login = {
+    email: "",
+    password: ""
+  }
 
   constructor(private modalService: NgbModal,
-              private loginService: LoginService) { }
+    private loginService: LoginService) { }
 
-  open(content : any) {
+  open(content: any) {
     console.log("passei")
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'})
+    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' })
   }
 
   ngOnInit(): void {
@@ -31,14 +31,41 @@ export class LoginComponent implements OnInit {
 
   mensagem = "";
 
+  listaProibida: string[] = [
+    "table",
+    "select",
+    "order",
+    "from",
+    "drop",
+    "or",
+    "insert",
+    "by",
+    ";"
+  ]
+
+  usuarioBloqueado: Boolean = false;
+
   acessa() {
-    this.loginService.acessar(this.loginMd)
-    .subscribe( (response) => {
-      this.mensagem = "Olá, " + this.loginMd.email
-    }, (error)=> {
-      this.mensagem = error.error;
-    } )
-    this.modalService.dismissAll()
+
+    this.usuarioBloqueado = false;
+    this.listaProibida.forEach(palavra => {
+      if (this.loginMd.email.toLowerCase().includes(palavra)) {
+        this.mensagem = "Dados inválidos";
+        this.usuarioBloqueado = true;
+        console.log("passei1");
+        return;
+      }
+    })
+
+    if (!this.usuarioBloqueado) {
+      this.loginService.acessar(this.loginMd)
+        .subscribe((response) => {
+          this.mensagem = "Olá, " + this.loginMd.email
+        }, (error) => {
+          this.mensagem = error.error;
+        })
+      this.modalService.dismissAll()
+    }
   }
 
 }
